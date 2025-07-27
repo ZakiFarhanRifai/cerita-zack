@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
@@ -22,7 +27,7 @@
 
     <title>CERITA ZAK</title>
   </head>
-  <body class="font-[Poppins] bg-[#FAFAFA]">
+  <body class="font-[Poppins] dark:bg-gray-900 bg-[#FAFAFA]" id="kelas7">
     <!-- header-->
 
     <header class="sticky top-0 z-50 shadow-lg bg-black/50 backdrop-blur-lg">
@@ -33,13 +38,34 @@
         <ul
           class="hidden menu md:flex md:relative md:top-0 md:divide-y-0 md:w-auto"
         >
-          <li class="py-1 px-7 hover:text-gray-500">
+          <li class="py-4 px-7 hover:text-gray-500">
             <a href="index.html">Cerita Zack</a>
           </li>
-          <li class="py-1 px-7 hover:text-gray-500">
+          <li class="py-4 px-7 hover:text-gray-500">
             <a href="#about">tentang saya</a>
           </li>
+          <li class="flex items-center py-4 pl-8 mt-3 lg:mt-0">
+            <div class="flex">
+              <span class="mr-2 text-sm text-slate-500 dark:text-gray-300">
+                light</span
+              >
+              <input type="checkbox" class="hidden" id="dark-toggle" />
+              <label for="dark-toggle">
+                <div
+                  class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500 dark:bg-gray-600"
+                >
+                  <div
+                    class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle dark:translate-x-4"
+                  ></div>
+                </div>
+              </label>
+              <span class="ml-2 text-sm text-slate-500 dark:text-gray-300">
+                dark</span
+              >
+            </div>
+          </li>
         </ul>
+
         <button class="text-2xl hamburger-menu md:hidden">
           <i class="fa-solid fa-bars"></i>
           <i class="hidden fa-solid fa-xmark"></i>
@@ -47,19 +73,205 @@
       </nav>
     </header>
 
-    <h2 class="mt-24 text-3xl font-extrabold text-center dark:text-white">
-      COOMING SOON
+    <h2
+      class="mt-8 text-3xl text-[#0f172a] dark:text-white font-extrabold text-center"
+    >
+      Kelas 8 adalah masa terseru dan terngangenin
     </h2>
+    <p
+      class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start"
+    >
+      sebelum kecerita pasti anda akan menanyakan hal ini:
+    </p>
+    <p class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white">
+      “Apa yang Membuat anda kelas 8 adalah masa terseru dan terngangenin?”
+    </p>
+    <p class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white">
+      Certianya begini:
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Bermula di kelas 8, aku ternyata sekelas dengan gandhi,afu,ubay,daus,ranu
+      dan banyak lagi. Disaat itu kelas terbagi 4 kubu, kubu pertama sebut saja
+      ketuanya ubay, yang kedua chaca, ketiga rama, dan keempat khartika.
+      Sebenarnya bukan kubu buat tawuran antar kelas ya sebut saja sircle.
+      Meskipun kebagi 4 tetap saja kalau ada tugas tetap mengerjakan bareng kok
+      hehehe.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Sebenarnya banyak sekali hal terseru di kelas 8, misalnya saat itu sedang
+      hujan. itu kan lantainya basah kan, nah di situ kita seluncuran di lantai
+      tersebut kemudian datangnlah bu wenang. Fyi bu wenang ini ibarat guru
+      disiplin, nah disitu kita di tegur kemudian kita kabur lewat jendela kelas
+      wkwkwk. Ada lagi ketika semua cowok dihukum keluar kelas, karenga nggak
+      ngerjain mtk. Jadi tiba tiba tuh pak singgih selaku guru mtk smp telkom,
+      membuang semua kertas ujian mtk ke lantai kemudian menyuruh semua cowok
+      untuk keluar kelas. Sekian lama menunggu, kita para cowok disuruh masuk
+      kemudian meminta maaf.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Ada juga teman saya inisial R, menaruh boncabe milik saya kemudian di
+      masukan ke botolnya afu. Besoknya teman saya R dipanggil ibunya afu
+      menghadap ke ruang guru WKWKWKWK bodoh bet cok. Lagi-lagi si R buat ulah,
+      dia ngevape di kelas dan berbagi dengan beberapa cowok yang di kelas.
+      Alhasil besoknya di panggil keruang guru lagi dan ternyata bukan hanya
+      kelas kami yang kena kelas lain juga kena. Kalau dipiki pikir kaya
+      transaksi ilegal ya wkwkwk.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Hal seru lainya ada di geng/sircle gue, yang ketuanya sebut saja ubay.
+      Dimulai dari jumatan di luar yang dapat makanan(jumat berkah) dan pulang
+      pulang udah masuk pelajaran. Tidak selamanya geng/sircle selalu damai ada
+      kalanya berantem juga hehehe yaa biasaalaah anak muda. Yang paling sering
+      kena buly(bercanda) itu ketuanya yaitu ubay, sampai-sampai ngamuknya
+      lempar botol minumnya gandhi sampai airtnya tumpah tumpah kemana-mana
+      wkwkwk.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Dan masa yang paling seru dan terngangenini yaitu ketika study tour. Jelas
+      lah ya no debat, studytour itu masa tersru ya meskipun sekarang kabar
+      kabarnya studytour ditiadakan. ya balik ke cerita studytour. Awal mula
+      studytour kami di jadwalkan ke jakarta-bandung, tapi ternyata akhirnya di
+      bandung 4 hari. Jadi kami pergi study tour dengan bus di malah hari.
+      Singkat cerita kami sudah masuk ke toll bandung, saya kagum sih dengan
+      megahnya stadion GBLA apalagi JIS yak 🤔. Kemudian kita telah tiba di
+      TELKOM UNIVERISTY kayaknya :v saya lupa alurnya, seingat saya sih ya :).
+      Disitu kami di bawa ke aulanya. Setelah selesai kami ke bis, tapi sebelum
+      itu saya tanya ke pak satpan terus ku record dengan hp. Intinya pak satpam
+      bilang kalau nyewa sepeda itu harus bayar karena kan telu itu luas saya
+      pikir perlu sepda lah minimal. dan pertanyaan lainya saya lupa hehehe.
+      Setelah dari telu makan kayaknya tapi saya skip ya kurang menarik.
+      Kemudian kita ke hotel, di hotel kami di bagi perkamarnya 4 oramg, dan lu
+      tahu berapa yang terisi di kamarku? ya benar 8 orang. Ada saya, abid,
+      gandhi, ubay, farhan,daus,ranu,fakhri kalau nggak salah. Suasana kamar
+      tersebut sangat menyenangkan. Karena ada yang iseng telfon kamar seblah
+      soalnya kamar sebelah cewek cuy. Kami juga nggak bisa tidur cuy gara gara
+      suara radio hotel serem cuy yang akhirnya di matikan. Kami juga main poker
+      dan untung saja tidak ketahuan pas sidak. Dan tiba tiba si gandhi hilang
+      cuy pas pagi, dan ternyata katanya di panggil pak singgih untuk MTK. Saya
+      juga pas mendekati hari kepulangan nggak sengaja numpahin stawbery
+      dikasur, akhirnya saya, gandhi, dan farhan menumpahkan minuman ke kasur
+      biar setidaknnya menyamarkan noda wkwkwwk.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Hari pertama kami pergi ke Museum Konferensi Asia Afrika, saya langsung
+      kagum dengan keindahan dari isi museum tersebut. Seperti lord rangga
+      bilang, bahwa dunia terbentuk dari Konfrensi Asia Afrika di bandung. Entah
+      lah mungkin benar, mungkin juga tidak. Setelah itu saya juga ketemu bule
+      jebolan akademi juve yang sekarang jadi legendnya madrid wkwkwkwk bercanda
+      cuy. Tanpa pikir panjang saya ajak foto.
+    </p>
+    <p
+      class="mt-5 mb-3 lg:mx-14 mx-10 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Hari kedua kami pergi ke saung Angklung Udjo, tidak ada ingatan seru hanya
+      ada guru guru joget dan mbak mbak yang cantik cantik hehehe.
+    </p>
+    <p
+      class="mt-5 mb-3 lg:mx-14 mx-10 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Hari ketiga kita ke museum geologi bandung, disana kita menonton sebuah
+      video tapi lupa video apa. Disana banyak peninggalan bersejarah dan paling
+      besar itu kerangka dinasaurus. Kemudian dari museum goelogi, kami lanjut
+      ke gedung sate. Saya lupa ngapain tapi yang saya inget saya ke kantinnya
+      dan tanya pak ridwannya ada pak? dan di jawab baru saja pergi yah sayang
+      sekali. Disitu saya pengin beli duren bakar cuy jujur-juran aja soalnya
+      bingung juga ya baru tau ada duren bakar, tapi karena waktu nggak cukup ya
+      tidak jadi. Kemudian kita lanjut ke Trans Studio Bandung, disinilah puncak
+      keseruang studytour ini. Bagaimana tidak, disitu banyak sekali wahananya.
+      Disitu saya,fakhri,faiq beli VIP hahay. Jadi kami tinggal masuk aja cuy
+      tanpa ngantri, seperti di tik-tok tik-tok dengan mata pengunjung antrian
+      yang sinis. Tapi ya mau gimana lagi yang punya uang yang punya kuasa
+      ups🤑.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Hari keempat kami ke Farm House Susu Lembang, disitu saya melihat nona
+      belanda yang sedang foto di bangunan kincir angin. Sepertinya menarik
+      untuk di naturalisasi jadi istirku wkwkwk. Setelah di Farm House Susu
+      Lembang, kami pulang ke purwokerto. sebelum itu kami ke rest area
+      cihampelas walk bandung kalau nggak salah, disitu saya kagum luas juga ya
+      tempat rest areanya. Disitu teman saya ada yang ke sturbuck,ke mall, dan
+      lain lain. Kalau saya sih ke burger king hehehe. Ketika kami akan pulang,
+      saya ditawari mochi saya lupa harganya tapi saya tawar dan mau. Dari situ
+      saya bilang ke temrn-temenku,terus pada beli. Dan kami pun pulang ke
+      sekolah. Alhamdullillah semua selamat.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Kata orang "Bumi Pasundan lahir ketika Tuhan sedang tersenyum", kata kata
+      itu bukan sembarang kata. Hal ituu terbukti pada studytour kami, yang
+      merasakan kenangan dan keseruan yang di tawarkan. Disisi lain cerita dilan
+      dan milea menjadi saksi atas kata kata tersebut. Dan semoga saya bisa
+      balik lagi ke bandung, untuk menemukan cintanya bandung😍.
+    </p>
+    <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Okeh balik lagi ke cerita kelas 8. Di kelas 8 ini, kami memiliki wali kelas yang sangat luar biasa. Wali kelas kami bernama bu ismi. Bagaimana tidak luar biasa, ketika tadi cerita pak singgih marah ada peran bu ismi yang menenangkan pak singgih ❤. Ada juga ketiika kejadian kaca pecah. Bu ismi bilang:"nggak papa gaji bu ismi dipotong yang penting jangan di ulangi lagi ya" Kata-kata itu yang membuat kami sangat rispek sampai sekarang. Terimakasih bu ismi. 
+    </p>
+        <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Sayangnya cerita dikelas tidak bertahan lama, pasalnya saat itu ada covid. Kami pun mulai pelajaran dengan online berbekal zoom meet dan classroom. Ternyata covid ini memberikan hikmah ke saya. Yang pertama pasti bisa kumpul dengan keluarga, yang kedua hemat uang seperti bensin,sangu,dll. Kemudian yang terkahir, saya bisa lebih kenal lebih dekat dengan chaca dan berlian. Karena sebelumnya kami tidak pernah komunikasi. Yang tadi saya pikir cacha dan berlian adalah orang sombong ternyata orangnya sangat seru dan humble banget. Chaca dulu saat offline dia suka teriak teriak tapi setelah online saya sadar ternyata orangnya kalem. Berlian saya jujur saat ofline tidak pernah komunikasi, setelah online ternyata orangnya random tapi seru poll. Dia juga orangnya mau ketia saya ajak colab dia mau, rispek.    
+    </p>
+            <p
+      class="mt-5 mb-3 mx-10 lg:mx-14 text-justify text-[#0f172a] dark:text-white indent-8"
+    >
+      Setelah selesai covid kami naik kelas 9 dan lumayan lama nggak kumpul hingga akhirnya kita kumpul lagi. Meskipun nggak full saya rasa itu cukup baik sih    
+    </p>
+    <h1
+      class="mt-5 mb-3 mx-10 text-2xl text-center text-[#0f172a] dark:text-white"
+    >
+      TAMAT
+    </h1>
+    <p class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white">
+      Momen yang paling seru dan terngangenin? = Masa studytour.
+    </p>
+    <p class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white">
+      Covid bikin rugi? = tidak, ada hikmahnya
+    </p>
+    <p class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white">
+      Pengin balik kelas 8? = ya plisssssss
+    </p>
+    <p class="mt-8 mb-3 mx-10 lg:mx-14 text-[#0f172a] dark:text-white">
+      Wali kelas terbaik? = bu ismi donggg
+    </p>
 
-   
     <!--Cerita Zack-->
     <hr class="h-px my-20 bg-gray-200 border-0 dark:bg-gray-700" />
     <!-- about -->
-    <h3 class="my-10 text-5xl font-bold text-center">Tentang saya lurd</h3>
-    <section id="about" class="w-11/12 mx-auto md:container bg-[#FAFAFA]">
-      <div class="flex items-start space-x-10">
-        <img src="asset/fotoku14.png" class="w-24 md:w-1/3" />
-        <div>
+    <h3
+      class="my-10 text-5xl font-bold text-center text-[#0f172a] dark:text-white"
+    >
+      Tentang saya lurd
+    </h3>
+    <section
+      id="about"
+      class="w-11/12 mx-auto md:container bg-[#FAFAFA] dark:bg-gray-900"
+    >
+      <div class="flex flex-col items-start sm:flex-row sm:space-x-10">
+        <!-- Gambar -->
+        <img
+          src="asset/fotoku14.png"
+          class="w-24 mx-auto mb-5 md:w-1/3 sm:mx-0 sm:mb-0"
+        />
+
+        <!-- Konten -->
+        <div class="dark:text-white text-[#0f172a]">
           <p class="mb-5">semua cerita kehidupan ada di sini</p>
           <h3 class="mb-5 text-5xl font-bold">Zack</h3>
           <p class="mb-5">
@@ -69,37 +281,102 @@
             jadi sebenarnya sih ini nulis dari buku dulu tapi aku kepikiran tak
             bikin sekalian di web hehehehe
           </p>
-          <p class="pb-5 mb-5 border-b border-gray-900">
+          <p class="pb-5 mb-5 border-b border-gray-900 dark:border-gray-600">
             kata kata hari ini masbro: "lebih baik berposes dari pada nggak
             samma sekali". mashokk
           </p>
-          <ul class="md:flex md:space-x-5">
+          <ul class="md:flex md:space-x-5 text-[#0f172a] dark:text-white">
             <li>
-              <a href="https://www.tiktok.com/@nggakadanama4"
-                ><i class="fa-brands fa-tiktok"></i> Tiktok</a
+              <a
+                href="https://www.tiktok.com/@nggakadanama4"
+                class="hover:text-gray-500 dark:hover:text-gray-300"
               >
+                <i class="fa-brands fa-tiktok"></i> Tiktok
+              </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/zaaki.py/"
-                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              <a
+                href="https://www.instagram.com/zaaki.py/"
+                class="hover:text-gray-500 dark:hover:text-gray-300"
               >
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+              <a href="" class="hover:text-gray-500 dark:hover:text-gray-300">
+                <i class="fa-brands fa-twitter"></i> Twitter
+              </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/@ytzfgaming0230"
-                ><i class="fa-brands fa-youtube"></i> YouTube</a
+              <a
+                href="https://www.youtube.com/@ytzfgaming0230"
+                class="hover:text-gray-500 dark:hover:text-gray-300"
               >
+                <i class="fa-brands fa-youtube"></i> YouTube
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-
-    <footer class="py-5 font-bold text-center bg-[#FAFAFA]">
+    <footer
+      class="py-5 font-bold text-center text-[#0f172a] bg-[#FAFAFA] dark:bg-gray-900 dark:text-white"
+    >
       &copy; 2024 Cerita Zack
     </footer>
+
+    <!-- Back to Top -->
+    <a
+      href="#kelas7"
+      id="to-top"
+      class="h-14 w-14 bg-red-500 rounded-full hidden fixed z-[9999] right-4 bottom-4 p-4 items-center justify-center hover:animate-pulse"
+    >
+      <span
+        class="block w-5 h-5 mt-2 rotate-0 border-t-2 border-l-2 border-white"
+      ></span>
+    </a>
+
+    <script>
+      // Dark mode toggle functionality
+      const darkToggle = document.getElementById("dark-toggle");
+      const html = document.documentElement;
+
+      // Check for saved user preference or system preference
+      if (localStorage.getItem("dark-mode") === "enabled") {
+        // Diperbaiki di sini
+        html.classList.add("dark");
+        darkToggle.checked = true;
+      } else if (
+        !localStorage.getItem("dark-mode") &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        html.classList.add("dark");
+        darkToggle.checked = true;
+      }
+
+      // Toggle dark mode
+      darkToggle.addEventListener("change", function () {
+        if (this.checked) {
+          html.classList.add("dark");
+          localStorage.setItem("dark-mode", "enabled");
+        } else {
+          html.classList.remove("dark");
+          localStorage.removeItem("dark-mode");
+        }
+      });
+
+      // Back to top button
+      const toTop = document.getElementById("to-top");
+      window.onscroll = function () {
+        if (window.scrollY > 300) {
+          toTop.classList.remove("hidden");
+          toTop.classList.add("flex");
+        } else {
+          toTop.classList.remove("flex");
+          toTop.classList.add("hidden");
+        }
+      };
+    </script>
 
     <script src="script.js"></script>
   </body>

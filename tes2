@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-      };
-    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
@@ -27,12 +22,10 @@
 
     <title>CERITA ZAK</title>
   </head>
-  <body class="font-[Poppins] bg-[#FAFAFA] dark:bg-gray-900">
+  <body class="font-[Poppins] bg-[#FAFAFA]">
     <!-- header-->
 
-    <header
-      class="sticky top-0 z-50 shadow-lg bg-black/50 backdrop-blur-lg dark:bg-gray-900/80"
-    >
+    <header class="sticky top-0 z-50 shadow-lg bg-black/50 backdrop-blur-lg">
       <nav
         class="flex items-center justify-between w-11/12 py-4 mx-auto text-white md:container"
       >
@@ -40,30 +33,26 @@
         <ul
           class="hidden menu md:flex md:relative md:top-0 md:divide-y-0 md:w-auto"
         >
-          <li class="py-4 px-7 hover:text-gray-500 dark:hover:text-gray-300">
+          <li class="py-1 px-7 hover:text-gray-500">
             <a href="#Cerita Zack">Cerita Zack</a>
           </li>
-          <li class="py-4 px-7 hover:text-gray-500 dark:hover:text-gray-300">
+          <li class="py-1 px-7 hover:text-gray-500">
             <a href="#about">tentang saya</a>
           </li>
-          <li class="flex items-center py-4 pl-8 mt-3 lg:mt-0">
+          <li class="flex items-center pl-8 mt-3 lg:mt-0">
             <div class="flex">
-              <span class="mr-2 text-sm text-slate-500 dark:text-gray-300">
-                light</span
-              >
+              <span class="mr-2 text-sm text-slate-500"> light</span>
               <input type="checkbox" class="hidden" id="dark-toggle" />
               <label for="dark-toggle">
                 <div
-                  class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500 dark:bg-gray-600"
+                  class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500"
                 >
                   <div
-                    class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle dark:translate-x-4"
+                    class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle"
                   ></div>
                 </div>
               </label>
-              <span class="ml-2 text-sm text-slate-500 dark:text-gray-300">
-                dark</span
-              >
+              <span class="ml-2 text-sm text-slate-500"> dark</span>
             </div>
           </li>
         </ul>
@@ -110,12 +99,10 @@
     </section>
 
     <!--Cerita Zack-->
-    <section id="Cerita Zack" class="bg-[#FAFAFA] dark:bg-gray-900">
+    <section id="Cerita Zack" class="bg-[#FAFAFA]">
       <div class="mt-20">
-        <h3 class="mb-5 text-5xl font-bold text-center text-[#0f172a] dark:text-white">
-          Cerita Zack
-        </h3>
-        <p class="mb-5 text-2xl text-center text-gray-500 dark:text-gray-400">
+        <h3 class="mb-5 text-5xl font-bold text-center">Cerita Zack</h3>
+        <p class="mb-5 text-2xl text-center text-gray-500">
           Selamat menikmati cerita cerita saya
         </p>
         <div class="grid grid-cols-2 gap-4 mt-14 md:grid-cols-4">
@@ -232,20 +219,20 @@
             </a>
           </div>
           <div class="grid gap-4">
-            <a href="siimut.html">
+            <a href="coomingsoon4.html">
               <div
                 class="relative group hover:shadow-[#FF007A] shadow-lg hover:scale-105"
               >
                 <img
                   class="h-auto max-w-full rounded-lg"
-                  src="asset/fotoku15.png"
+                  src="asset/fotoku8.png"
                   alt=""
                 />
                 <div
                   class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100"
                 >
                   <p class="text-lg font-bold text-center text-white">
-                    Siimut
+                    Cooming soon
                   </p>
                 </div>
               </div>
@@ -349,13 +336,8 @@
     <!--Cerita Zack-->
     <hr class="h-px my-20 bg-gray-200 border-0 dark:bg-gray-700" />
     <!-- about -->
-    <h3 class="my-10 text-5xl font-bold text-center text-[#0f172a] dark:text-white">
-      Tentang saya lurd
-    </h3>
-    <section
-      id="about"
-      class="w-11/12 mx-auto md:container bg-[#FAFAFA] dark:bg-gray-900"
-    >
+    <h3 class="my-10 text-5xl font-bold text-center">Tentang saya lurd</h3>
+    <section id="about" class="w-11/12 mx-auto md:container bg-[#FAFAFA]">
       <div class="flex flex-col items-start sm:flex-row sm:space-x-10">
         <!-- Gambar -->
         <img
@@ -364,7 +346,7 @@
         />
 
         <!-- Konten -->
-        <div class="dark:text-white text-[#0f172a]">
+        <div>
           <p class="mb-5">semua cerita kehidupan ada di sini</p>
           <h3 class="mb-5 text-5xl font-bold">Zack</h3>
           <p class="mb-5">
@@ -374,47 +356,34 @@
             jadi sebenarnya sih ini nulis dari buku dulu tapi aku kepikiran tak
             bikin sekalian di web hehehehe
           </p>
-          <p class="pb-5 mb-5 border-b border-gray-900 dark:border-gray-600">
+          <p class="pb-5 mb-5 border-b border-gray-900">
             kata kata hari ini masbro: "lebih baik berposes dari pada nggak
             samma sekali". mashokk
           </p>
-          <ul class="md:flex md:space-x-5 text-[#0f172a] dark:text-white">
+          <ul class="md:flex md:space-x-5">
             <li>
-              <a
-                href="https://www.tiktok.com/@nggakadanama4"
-                class="hover:text-gray-500 dark:hover:text-gray-300"
+              <a href="https://www.tiktok.com/@nggakadanama4"
+                ><i class="fa-brands fa-tiktok"></i> Tiktok</a
               >
-                <i class="fa-brands fa-tiktok"></i> Tiktok
-              </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/zaaki.py/"
-                class="hover:text-gray-500 dark:hover:text-gray-300"
+              <a href="https://www.instagram.com/zaaki.py/"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
               >
-                <i class="fa-brands fa-instagram"></i> Instagram
-              </a>
             </li>
             <li>
-              <a href="" class="hover:text-gray-500 dark:hover:text-gray-300">
-                <i class="fa-brands fa-twitter"></i> Twitter
-              </a>
+              <a href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
             </li>
             <li>
-              <a
-                href="https://www.youtube.com/@ytzfgaming0230"
-                class="hover:text-gray-500 dark:hover:text-gray-300"
+              <a href="https://www.youtube.com/@ytzfgaming0230"
+                ><i class="fa-brands fa-youtube"></i> YouTube</a
               >
-                <i class="fa-brands fa-youtube"></i> YouTube
-              </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <footer
-      class="py-5 font-bold text-center text-[#0f172a] bg-[#FAFAFA] dark:bg-gray-900 dark:text-white"
-    >
+    <footer class="py-5 font-bold text-center bg-[#FAFAFA]">
       &copy; 2024 Cerita Zack
     </footer>
 
@@ -424,41 +393,10 @@
       id="to-top"
       class="h-14 w-14 bg-red-500 rounded-full hidden fixed z-[9999] right-4 bottom-4 p-4 items-center justify-center hover:animate-pulse"
     >
-      <span
-        class="block w-5 h-5 mt-2 rotate-0 border-t-2 border-l-2 border-white"
-      ></span>
+      <span class="block w-5 h-5 mt-2 rotate-0 border-t-2 border-l-2"></span>
     </a>
 
     <script>
-      // Dark mode toggle functionality
-      const darkToggle = document.getElementById("dark-toggle");
-      const html = document.documentElement;
-
-      // Check for saved user preference or system preference
-      if (localStorage.getItem("dark-mode") === "enabled") {
-        // Diperbaiki di sini
-        html.classList.add("dark");
-        darkToggle.checked = true;
-      } else if (
-        !localStorage.getItem("dark-mode") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      ) {
-        html.classList.add("dark");
-        darkToggle.checked = true;
-      }
-
-      // Toggle dark mode
-      darkToggle.addEventListener("change", function () {
-        if (this.checked) {
-          html.classList.add("dark");
-          localStorage.setItem("dark-mode", "enabled");
-        } else {
-          html.classList.remove("dark");
-          localStorage.removeItem("dark-mode");
-        }
-      });
-
-      // Back to top button
       const toTop = document.getElementById("to-top");
       window.onscroll = function () {
         if (window.scrollY > 300) {
